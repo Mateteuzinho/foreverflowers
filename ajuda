@@ -1,0 +1,16 @@
+https://docs.google.com/document/d/1ebV2jhxWCZbw3sYcPhuapON2bZBn9qy3s9HyHU2eaOA/edit?pli=1
+
+postman - get
+localhost:3000/
+
+postman - post /body/raw/JSON 
+localhost:3000/cadastropessoa
+
+{
+        "nome" : "nome nome nome",
+        "email" : "teste@gmail.com",
+        "endereco" : "r. sla",
+        "numero" : 123,
+        "cep" : "00000-000",
+        "nascimento" : "10-07-2003"
+}
