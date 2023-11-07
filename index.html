@@ -1,60 +1,89 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Revac2mia</title>
-    <!-- Inclua o CSS do Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>foreverflowers</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        header .container a{
+            color: white;
+        }
+        header .container a:hover{
+            color: white;
+            
+        }
+    </style>
 </head>
 <body>
-
-<!-- Barra de Navegação Bootstrap -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="/">Revac2mia</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="/">Página Principal</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/cadastropessoa">Cadastro de Pessoa</a>
-            </li>
-        </ul>
-    </div>
-</nav>
-
-<!-- Área Principal -->
-<div class="container mt-5">
-    <h1>Bem-vindo à Página Principal</h1>
-    <p>Esta é a página principal do meu site.</p>
-</div>
-
-<!-- Footer -->
-<footer class="bg-dark text-white text-center py-3">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <p>&copy; 2023 Revac2mia</p>
-            </div>
-            <div class="col-md-6">
-                <div class="social-icons">
-                    <a href="#" class="text-white pr-2"><i class="fab fa-facebook"></i></a>
-                    <a href="#" class="text-white pr-2"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="text-white pr-2"><i class="fab fa-linkedin"></i></a>
+    <header class="navbar-light" style="background-color: rgb(133, 3, 3);">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 d-flex align-items-center">
+                    <a href="/"><h1 class="my-3">foreverflowers</h1></a>
+                </div>
+                <div class="col-4 text-center">
+                    <a href="/"><img src="https://static.vecteezy.com/system/resources/previews/001/191/408/non_2x/rose-logo-png.png" alt="SportsZone Logo" class="img-fluid" style="width: 100px;"></a>
+                </div>
+                <div class="text-right d-flex align-items-center">
+                    <a href="/cadastrousuario" class="btn btn-link">Entrar</a>
+                    <a href="/cadastroprodutoartificial" class="btn btn-link">Cadastro de Produto</a>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
+    </header>
 
+    <div class="container mt-4">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://img.freepik.com/fotos-gratis/close-up-de-uma-flor-roxa_181624-25863.jpg?w=740&t=st=1699367621~exp=1699368221~hmac=41fd0872c78922be262d2e832d7ee3bb7f4d2af639fc76af9c2783a0102f3141" class="d-block w-100" alt="Imagem 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://img.freepik.com/fotos-premium/primavera-linda-flor-margarida-africana_69593-7019.jpg?w=740" class="d-block w-100" alt="Imagem 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://img.freepik.com/fotos-gratis/arranjo-lindo-de-papel-de-parede-de-flores_23-2149057015.jpg?w=740&t=st=1699367683~exp=1699368283~hmac=ad5093ea59359a820558e790b17fab8409297e270ee99b5ddb096e3482a93abd" class="d-block w-100" alt="Imagem 3">
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-4" style="display: flex; justify-content: center; align-items: center;">
+                <p> -- A "Forever Flowers" é uma encantadora loja especializada na venda de flores e produtos relacionados a flores. Localizada em um local de fácil acesso no coração da cidade, a loja se destaca por oferecer uma ampla variedade de flores frescas, arranjos florais criativos e outros itens relacionados a flores que atendem a todas as necessidades de seus clientes.<br><br>
+                    Decoração de Eventos: Além de atender a clientes individuais, a ForeverFlowers também se destaca na decoração de eventos. Seja um casamento luxuoso, uma festa de aniversário ou uma conferência corporativa, eles têm a capacidade de transformar qualquer espaço em um cenário encantador, criando uma atmosfera única e memorável.</p>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://img.freepik.com/vetores-premium/rosa-vermelha-isolada-no-fundo-branco_534681-497.jpg" class="card-img-top" alt="Produto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Rosa</h5>
+                        <p class="card-text">A rosa é considerada uma das flores mais bonitas, com suas folhas ovaladas, recortadas em forma de dentes ou planas, em cores que vão do verde-médio ao verde-escuro. </p>
+                        <a href="/cadastrousuario" class="btn btn-danger">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4" style="display: flex; justify-content: center; align-items: center;">
+                <p> -- Variedade de Flores: A "ForeverFlowers" oferece uma ampla variedade de flores frescas, desde as clássicas rosas vermelhas até lírios exuberantes, tulipas vibrantes e muito mais. A loja se orgulha de manter suas flores sempre frescas, garantindo que seus clientes recebam produtos de qualidade superior. <br><br>
+                    Arranjos Personalizados: A equipe altamente qualificada da ForeverFlowers é especialista em criar arranjos florais personalizados para qualquer ocasião, seja um casamento, aniversário, evento corporativo ou simplesmente para iluminar o dia de alguém. Eles trabalham de perto com os clientes para garantir que os arranjos atendam às suas expectativas e reflitam suas emoções.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-4 text-center" style="background-color: rgb(133, 3, 3); color: white;">
+        <p>&copy; 2023 foreverflowers</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-<!-- Inclua o JavaScript do Bootstrap e jQuery -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </html>

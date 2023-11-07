@@ -18,20 +18,20 @@ mongoose.connect('mongodb://127.0.0.1:27017/foreverflowers',
  
 //criando a model do seu projeto
 const usuarioSchema = new mongoose.Schema({
-    email : {type : String, required : true},
+    email : {type : String, Required : true},
     senha : {type : String}
 });
 const Usuario = mongoose.model("Usuario", usuarioSchema);
  
 //criando a segunda model
 const produtoEsporteSchema = new mongoose.Schema({
-    id_produtoartificial : {type : String, required : true},
+    id_produtoartificial : {type : String, Required : true},
     descricao : {type : String},
     fornecedor : {type : String},
     dataFabricacao : {type : Date},
     quantidadeEstoque : {type : Number}
 });
-const produtoartificial = mongoose.model("produtoartificial", produtoartificialSchema);
+const produtoartificial = mongoose.model("produtoartificial", produtoEsporteSchema);
  
 //configurando os roteamentos
 app.post("/cadastrousuario", async(req, res)=>{
@@ -58,6 +58,10 @@ app.post("/cadastroprodutoartificial", async(req, res)=>{
     const fornecedor = req.body.fornecedor;
     const dataFabricacao = req.body.dataFabricacao;
     const quantidadeEstoque = req.body.quantidadeEstoque
+
+    if(quantidadeEstoque <= 0 || quantidadeEstoque > 27){
+        return res.status(400).json({error: "Estoque so é posivel de 0 até 27.."})
+    }
  
     //mandando para banco
     const produtoesporte = new Produtoesporte({
